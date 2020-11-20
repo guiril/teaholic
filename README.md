@@ -10,4 +10,4 @@
 ![](https://i.imgur.com/XdtVkv2.jpg)
 
 ### 手機版
-![](https://i.imgur.com/w2aBely.jpg)
+![](https://i.imgur.com/Tg6PDxL.jpg)
