@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="navbar container" id="navbar">
+        <button class="navbar-toggler" id="navbarToggler">
+          <div class="navbar-toggler__icon"></div>
+        </button>
+        <h1 class="navbar-logo"><a class="navbar-logo__item u-d-block" href="index.html">Sweetaste</a></h1>
+        <ul class="navbar-list">
+          <li class="navbar-list__item"><a class="navbar-list__link" href="index.html">首頁</a></li>
+          <li class="navbar-list__item"><a class="navbar-list__link" href="products.html">甜點</a></li>
+          <li class="navbar-list__item"><a class="navbar-list__link" href="login.html">登入</a></li>
+        </ul><a class="cart-link" href="cart.html"><span class="material-icons u-primary">shopping_cart</span></a>
+      </nav>
+      <div class="container no-gutters u-md-mx-auto u-md-pb-lg">
+        <div class="row u-justify-center">
+          <div class="col-10 u-d-flex u-justify-center">
+            <div class="col-7 u-md-pr-2">
+              <div class="checkout-box u-light u-bg-primary">
+                <div class="chekout-box__header u-d-flex u-justify-between u-align-center">
+                  <h2 class="u-font-lg u-font-bold u-light">發票</h2>
+                  <ul class="checkout-step u-d-flex u-justify-between u-align-center">
+                    <li class="checkout-step__item checkout-step__item--done"><span class="material-icons">check</span></li>
+                    <li class="checkout-step__item checkout-step__item--done"><span class="material-icons">check</span></li>
+                    <li class="checkout-step__item checkout-step__item--active"></li>
+                  </ul>
+                </div>
+                <div class="checkout-box__body">
+                  <div class="form-group u-w-100">
+                    <label class="form-label u-d-block u-font-sm u-font-bold" for="">電子郵件信箱</label>
+                    <input class="form-input u-font-xs u-primary u-bg-light" type="tel" placeholder="example@email.com"/>
+                  </div>
+                  <div class="form-group u-w-100">
+                    <label class="form-label u-d-block u-font-sm u-font-bold" for="">統一編號（選填）</label>
+                    <input class="form-input u-font-xs u-primary u-bg-light" type="tel" placeholder="12345678"/>
+                  </div>
+                </div>
+              </div><a class="btn btn--lg btn--warning" href="checkout-4.html">確認結帳</a>
+            </div>
+            <div class="col-5 u-d-none u-md-d-block">
+              <div class="cart-msg-box cart-msg-box--light u-mb-2">
+                <h2 class="cart-title cart-msg-title u-font-md u-font-bold u-text-center">訂單摘要</h2>
+                <ul class="cart-msg-list">
+                  <li class="cart-msg-list__item u-font-light"><span>小計</span><span>NT$ 2,700</span></li>
+                  <li class="cart-msg-list__item u-font-light"><span>運費</span><span>NT$ 300</span></li>
+                  <li class="cart-msg-list__item u-font-sm u-font-bold"><span>總計</span><span>NT$ 3,000</span></li>
+                </ul>
+              </div>
+              <div class="cart-msg-box cart-msg-box--light">
+                <h2 class="cart-title cart-msg-title u-font-md u-font-bold u-text-center">購物清單</h2>
+                <ul class="cart-msg-list">
+                  <li class="cart-msg-list__item u-align-center">
+                    <div class="cart-msg-list__img"></div>
+                    <div class="cart-msg-list__body u-d-flex u-flex-direction-column"><span class="u-font-light u-mb-1">焦糖馬卡龍（2）</span><span class="u-font-sm u-font-bold">NT$ 900</span></div>
+                  </li>
+                  <li class="cart-msg-list__item u-align-center">
+                    <div class="cart-msg-list__img"></div>
+                    <div class="cart-msg-list__body u-d-flex u-flex-direction-column"><span class="u-font-light u-mb-1">焦糖馬卡龍（2）</span><span class="u-font-sm u-font-bold">NT$ 900</span></div>
+                  </li>
+                  <li class="cart-msg-list__item u-align-center">
+                    <div class="cart-msg-list__img"></div>
+                    <div class="cart-msg-list__body u-d-flex u-flex-direction-column"><span class="u-font-light u-mb-1">焦糖馬卡龍（2）</span><span class="u-font-sm u-font-bold">NT$ 900</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="subscription">
+        <h3 class="subscription-title"><img class="subscription-title__logo" src="images/logo-icon-light.svg" alt="Logo Icon"/>
+          <div class="subscription-title__text">訂閱你我的甜蜜郵件</div>
+        </h3>
+        <div class="subscription-mailbox"><span class="material-icons u-primary subscription-mailbox__icon">email</span>
+          <input class="subscription-mailbox__input u-primary" type="mail"/>
+          <button class="subscription-mailbox__btn">
+            <div class="material-icons u-primary subscription-mailbox__btn-icon">arrow_forward</div>
+          </button>
+        </div>
+      </section>
+      <footer class="footer u-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-6"><img class="footer-logo" src="images/logo-m.svg" alt=""/>
+              <ul class="contact-list">
+                <li class="contact-list__item">
+                  <p class="contact-list__text">07-1234-5678</p>
+                </li>
+                <li class="contact-list__item">
+                  <p class="contact-list__text">sweetaste@email.com</p>
+                </li>
+                <li class="contact-list__item">
+                  <p class="contact-list__text">800 高雄市新興區幸福路 520 號</p>
+                </li>
+              </ul>
+              <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="#"><img class="social-list__img" src="images/social-l.svg" alt="LINE"/></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#"><img class="social-list__img" src="images/social-f.svg" alt="Facebook"/></a></li>
+              </ul>
+            </div>
+            <div class="col-6 u-d-flex u-flex-direction-column u-justify-between u-align-flex-end"><img class="footer-img" src="images/footer.svg" alt=""/><small class="footer-text">© 2018 Sweetaste* All Rights Reserved</small></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

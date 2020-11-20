@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tea'aholic</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="navbar container" id="navbar">
+        <button class="navbar-toggler" id="navbarToggler">
+          <div class="navbar-toggler__icon"></div>
+        </button>
+        <h1 class="navbar-logo"><a class="navbar-logo__item u-d-block" href="index.html">Sweetaste</a></h1>
+        <ul class="navbar-list">
+          <li class="navbar-list__item"><a class="navbar-list__link" href="index.html">首頁</a></li>
+          <li class="navbar-list__item"><a class="navbar-list__link" href="products.html">茶品</a></li>
+          <li class="navbar-list__item"><a class="navbar-list__link" href="login.html">登入</a></li>
+        </ul><a class="cart-link u-primary" href="cart.html"><span class="material-icons">shopping_cart</span></a>
+      </nav>
+      <div class="container no-gutters u-md-pt-3 u-md-pb-6 u-md-mx-auto">
+        <div class="row u-justify-center">
+          <div class="col-10 u-d-flex u-justify-center">
+            <div class="col-7 u-md-pr-2">
+              <div class="checkout-box u-light u-bg-primary">
+                <div class="chekout-box__header u-d-flex u-justify-between u-align-center">
+                  <h2 class="u-font-lg u-font-bold u-light">運送</h2>
+                  <ul class="checkout-step u-d-flex u-justify-between u-align-center">
+                    <li class="checkout-step__item checkout-step__item--active"></li>
+                    <li class="checkout-step__item"></li>
+                    <li class="checkout-step__item"></li>
+                  </ul>
+                </div>
+                <div class="checkout-box__body">
+                  <div class="u-d-flex u-justify-between">
+                    <div class="form-group u-w-49">
+                      <label class="form-label u-d-block u-font-sm u-font-bold" for="">姓氏</label>
+                      <input class="form-input u-font-xs u-primary u-bg-light" type="text" placeholder="鬼舞辻"/>
+                    </div>
+                    <div class="form-group u-w-49">
+                      <label class="form-label u-d-block u-font-sm u-font-bold" for="">名字</label>
+                      <input class="form-input u-font-xs u-primary u-bg-light" type="text" placeholder="無慘"/>
+                    </div>
+                  </div>
+                  <div class="form-group u-w-100">
+                    <label class="form-label u-d-block u-font-sm u-font-bold" for="">電話</label>
+                    <input class="form-input u-font-xs u-primary u-bg-light" type="tel" placeholder="0912-345-678"/>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label u-d-block u-font-sm u-font-bold" for="">地址</label>
+                    <div class="u-d-flex u-justify-between u-mb-sm">
+                      <select class="form-select u-w-49 u-d-block u-primary u-bg-light" name="">
+                        <option value="台北市">台北市</option>
+                      </select>
+                      <select class="form-select u-w-49 u-d-block u-primary u-bg-light" name="">
+                        <option value="春日部">春日部</option>
+                      </select>
+                    </div>
+                    <input class="form-input u-w-100 u-font-xs u-primary u-bg-light" type="text" placeholder="雞飛狗跳庄 520 號"/>
+                  </div>
+                </div>
+              </div><a class="u-d-block btn btn--lg btn--warning" href="checkout-2.html">下一步</a>
+            </div>
+            <div class="col-5 u-d-none u-md-d-block">
+              <div class="cart-msg-box cart-msg-box--light u-mb-2">
+                <h2 class="cart-title cart-msg-title u-font-md u-font-bold u-text-center">訂單摘要</h2>
+                <ul class="cart-msg-list">
+                  <li class="cart-msg-list__item u-font-light"><span>小計</span><span>NT$ 360</span></li>
+                  <li class="cart-msg-list__item u-font-light"><span>運費</span><span>NT$ 120</span></li>
+                  <li class="cart-msg-list__item u-font-sm u-font-bold"><span>總計</span><span>NT$ 480</span></li>
+                </ul>
+              </div>
+              <div class="cart-msg-box cart-msg-box--light">
+                <h2 class="cart-title cart-msg-title u-font-md u-font-bold u-text-center">購物清單</h2>
+                <ul class="cart-msg-list">
+                  <li class="cart-msg-list__item u-align-center">
+                    <div class="cart-msg-list__img" style="background-image: url(images/tea-1.png);"></div>
+                    <div class="cart-msg-list__body u-d-flex u-flex-direction-column"><span class="u-font-light u-mb-1">熱成紅茶</span><span class="u-font-sm u-font-bold">NT$ 120</span></div>
+                  </li>
+                  <li class="cart-msg-list__item u-align-center">
+                    <div class="cart-msg-list__img" style="background-image: url(images/tea-2.png);"></div>
+                    <div class="cart-msg-list__body u-d-flex u-flex-direction-column"><span class="u-font-light u-mb-1">鹿春紅茶</span><span class="u-font-sm u-font-bold">NT$ 120</span></div>
+                  </li>
+                  <li class="cart-msg-list__item u-align-center">
+                    <div class="cart-msg-list__img" style="background-image: url(images/tea-3.png);"></div>
+                    <div class="cart-msg-list__body u-d-flex u-flex-direction-column"><span class="u-font-light u-mb-1">太后紅茶</span><span class="u-font-sm u-font-bold">NT$ 120</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="u-py-3 u-bg-primary u-text-center">
+        <div class="container u-md-d-flex u-md-justify-between u-md-align-items-center">
+          <h3 class="subscription-title u-d-flex u-justify-center u-align-center"><img class="subscription-title__logo" src="images/logo-s.svg" alt="Logo Icon"/>
+            <p class="u-font-md u-light">訂閱你我的甜蜜郵件</p>
+          </h3>
+          <div class="subscription-mailbox"><span class="material-icons u-warning subscription-mailbox__icon">email</span>
+            <input class="subscription-mailbox__input u-primary" type="mail"/>
+            <button class="subscription-mailbox__btn u-bg-warning">
+              <div class="material-icons subscription-mailbox__btn-icon u-white">arrow_forward</div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer u-primary u-bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-6"><img class="footer-logo" src="images/logo-footer.svg" alt=""/>
+              <ul class="contact-list">
+                <li class="contact-list__item">
+                  <p class="contact-list__text">02-1234-5678</p>
+                </li>
+                <li class="contact-list__item">
+                  <p class="contact-list__text">teaholic@email.com</p>
+                </li>
+                <li class="contact-list__item">
+                  <p class="contact-list__text">888 台北市春日部雞飛狗跳庄 520 號</p>
+                </li>
+              </ul>
+              <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="#"><img class="social-list__img" src="images/social-l.svg" alt="LINE"/></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#"><img class="social-list__img" src="images/social-f.svg" alt="Facebook"/></a></li>
+              </ul>
+            </div>
+            <div class="col-6 u-d-flex u-flex-direction-column u-justify-between u-align-flex-end"><img class="footer-img" src="images/footer.svg" alt="今天是個喝紅茶的好日子"/><small class="footer-text">© 2020 Tea'aholic All Rights Reserved</small></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tea'aholic</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="navbar container" id="navbar">
+        <button class="navbar-toggler" id="navbarToggler">
+          <div class="navbar-toggler__icon"></div>
+        </button>
+        <h1 class="navbar-logo"><a class="navbar-logo__item u-d-block" href="index.html">Sweetaste</a></h1>
+        <ul class="navbar-list">
+          <li class="navbar-list__item"><a class="navbar-list__link" href="index.html">首頁</a></li>
+          <li class="navbar-list__item"><a class="navbar-list__link" href="products.html">茶品</a></li>
+          <li class="navbar-list__item"><a class="navbar-list__link" href="login.html">登入</a></li>
+        </ul><a class="cart-link u-primary" href="cart.html"><span class="material-icons">shopping_cart</span></a>
+      </nav>
+      <div class="u-md-pb-6">
+        <main class="container checkout-container u-d-flex u-flex-direction-column u-justify-center u-align-center">
+          <ul class="checkout-step checkout-step--dark u-d-flex u-justify-between u-align-center">
+            <li class="checkout-step__item"><span class="material-icons">check_circle</span></li>
+            <li class="checkout-step__item"><span class="material-icons">check_circle</span></li>
+            <li class="checkout-step__item"><span class="material-icons">check_circle</span></li>
+          </ul><img class="checkout-success" src="images/done.svg" alt="付款成功"/><a class="u-d-none u-md-d-inline-block btn btn--sm btn--warning" href="products.html">繼續逛逛</a>
+        </main><a class="u-d-block u-md-d-none btn btn--lg btn--warning" href="products.html">繼續逛逛</a>
+      </div>
+      <section class="u-py-3 u-bg-primary u-text-center">
+        <div class="container u-md-d-flex u-md-justify-between u-md-align-items-center">
+          <h3 class="subscription-title u-d-flex u-justify-center u-align-center"><img class="subscription-title__logo" src="images/logo-s.svg" alt="Logo Icon"/>
+            <p class="u-font-md u-light">訂閱你我的甜蜜郵件</p>
+          </h3>
+          <div class="subscription-mailbox"><span class="material-icons u-warning subscription-mailbox__icon">email</span>
+            <input class="subscription-mailbox__input u-primary" type="mail"/>
+            <button class="subscription-mailbox__btn u-bg-warning">
+              <div class="material-icons subscription-mailbox__btn-icon u-white">arrow_forward</div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer u-primary u-bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-6"><img class="footer-logo" src="images/logo-footer.svg" alt=""/>
+              <ul class="contact-list">
+                <li class="contact-list__item">
+                  <p class="contact-list__text">02-1234-5678</p>
+                </li>
+                <li class="contact-list__item">
+                  <p class="contact-list__text">teaholic@email.com</p>
+                </li>
+                <li class="contact-list__item">
+                  <p class="contact-list__text">888 台北市春日部雞飛狗跳庄 520 號</p>
+                </li>
+              </ul>
+              <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="#"><img class="social-list__img" src="images/social-l.svg" alt="LINE"/></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#"><img class="social-list__img" src="images/social-f.svg" alt="Facebook"/></a></li>
+              </ul>
+            </div>
+            <div class="col-6 u-d-flex u-flex-direction-column u-justify-between u-align-flex-end"><img class="footer-img" src="images/footer.svg" alt="今天是個喝紅茶的好日子"/><small class="footer-text">© 2020 Tea'aholic All Rights Reserved</small></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
