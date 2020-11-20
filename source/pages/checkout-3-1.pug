@@ -1,0 +1,64 @@
+extends _layout
+
+block navbar
+  include partials/_navbar
+
+block content
+  .container.no-gutters.u-md-pt-3.u-md-pb-6.u-md-mx-auto
+    .row.u-justify-center
+      .col-10.u-d-flex.u-justify-center
+        .col-7.u-md-pr-2
+          .checkout-box.u-light.u-bg-primary
+            .chekout-box__header
+              .u-d-flex.u-justify-between.u-align-center
+                h2.u-font-lg.u-font-bold.u-light 發票
+                ul.checkout-step.u-d-flex.u-justify-between.u-align-center
+                  li.checkout-step__item.checkout-step__item--done
+                    span.material-icons check
+                  li.checkout-step__item.checkout-step__item--done
+                    span.material-icons check
+                  li.checkout-step__item.checkout-step__item--active
+              ul.checkout-menu.u-d-flex.u-justify-center.u-text-center
+                li.checkout-menu__item
+                  a.checkout-menu__link.checkout-menu__link--active.u-d-block.u-font-sm.u-font-bold(href="checkout-3-1.html") 電子發票
+                li.checkout-menu__item
+                  a.checkout-menu__link.u-d-block.u-font-sm.u-font-bold(href="checkout-3-2.html") 郵寄發票
+            .checkout-box__body
+              .form-group.u-w-100
+                label.form-label.u-d-block.u-font-sm.u-font-bold(for="") 電子郵件信箱
+                input.form-input.u-font-xs.u-primary.u-bg-light(type="tel" placeholder="example@email.com")
+              .form-group.u-w-100
+                label.form-label.u-d-block.u-font-sm.u-font-bold(for="") 統一編號（選填）
+                input.form-input.u-font-xs.u-primary.u-bg-light(type="tel" placeholder="12345678")
+          a.u-d-block.btn.btn--lg.btn--warning(href="checkout-4.html") 確認結帳
+        .col-5.u-d-none.u-md-d-block
+          .cart-msg-box.cart-msg-box--light.u-mb-2
+            h2.cart-title.cart-msg-title.u-font-md.u-font-bold.u-text-center 訂單摘要
+            ul.cart-msg-list
+              li.cart-msg-list__item.u-font-light
+                span 小計
+                span NT$ 360
+              li.cart-msg-list__item.u-font-light
+                span 運費
+                span NT$ 120
+              li.cart-msg-list__item.u-font-sm.u-font-bold
+                span 總計
+                span NT$ 480
+          .cart-msg-box.cart-msg-box--light
+            h2.cart-title.cart-msg-title.u-font-md.u-font-bold.u-text-center 購物清單
+            ul.cart-msg-list
+              li.cart-msg-list__item.u-align-center
+                .cart-msg-list__img(style="background-image: url(images/tea-1.png);")
+                .cart-msg-list__body.u-d-flex.u-flex-direction-column
+                  span.u-font-light.u-mb-1 熱成紅茶
+                  span.u-font-sm.u-font-bold NT$ 120
+              li.cart-msg-list__item.u-align-center
+                .cart-msg-list__img(style="background-image: url(images/tea-2.png);")
+                .cart-msg-list__body.u-d-flex.u-flex-direction-column
+                  span.u-font-light.u-mb-1 鹿春紅茶
+                  span.u-font-sm.u-font-bold NT$ 120
+              li.cart-msg-list__item.u-align-center
+                .cart-msg-list__img(style="background-image: url(images/tea-3.png);")
+                .cart-msg-list__body.u-d-flex.u-flex-direction-column
+                  span.u-font-light.u-mb-1 太后紅茶
+                  span.u-font-sm.u-font-bold NT$ 120

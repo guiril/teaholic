@@ -1,0 +1,27 @@
+.form-group {
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.form-label {
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 20px;
+  &::placeholder {
+    color: rgba($secondary, .5);
+  }
+}
+
+.form-select {
+  padding: 16px 20px;
+  border: none;
+  &:last-child {
+    margin-right: 0;
+  }
+}

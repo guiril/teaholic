@@ -1,0 +1,75 @@
+extends _layout
+
+block navbar
+  - var path = 'index.html'
+  include partials/_navbar
+
+block content
+  .spotlight.container.u-py-0
+    .banner(style="background-image: url(https://images.unsplash.com/photo-1601230469243-02ae18aa4292?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);")
+    ul.spotlight-list
+      li.spotlight-list__item.spotlight-list__item--active
+        a.spotlight-list__link(href="javascript:void(0)")
+          span.spotlight-list__title 本日精選
+      li.spotlight-list__item
+        a.spotlight-list__link(href="javascript:void(0)")
+          span.spotlight-list__title 人氣推薦
+      li.spotlight-list__item
+        a.spotlight-list__link(href="javascript:void(0)")
+          span.spotlight-list__title 新品上市
+  section.copywriting.u-md-mb-10
+    h2.copywriting__title-sm.u-md-d-none.u-py-3.u-text-center
+      img.copywriting__title-img(src="images/copywriting-1-m.svg", alt="為什麼選擇了種茶葉？")
+    .u-bg-light
+      .container.u-py-0
+        .copywriting__img(style="background-image: url(https://images.unsplash.com/photo-1547205465-b0549a3637f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1625&q=80);")
+        .copywriting__text-container
+          h2.copywriting__title-lg.copywriting__title-lg--top.u-d-none.u-md-d-block
+            img.copywriting__title-img(src="images/copywriting-1.svg", alt="為什麼選擇了種茶葉？")
+          p.copywriting__text.u-font-light.u-secondary 自古以來茶即被認為是最好的保健飲料，歷史上已有很多飲茶與保健的文字記載。例如「神農嘗百草、日遇七十二毒，得茶而解之」，說明「茶」可以解毒、可當藥用。
+          p.copywriting__text.u-font-light.u-secondary 不論綠茶、烏龍茶或紅茶，所含的兒茶素類和其氧化物都已證實具有很強的抗氧化作用，可中和身體內各部分所產生的自由基，延緩老化、防止油脂氧化和改善過敏現象。
+  section.copywriting.u-md-mb-10
+    h2.copywriting__title-sm.u-md-d-none.u-py-3.u-text-center
+      img.copywriting__title-img(src="images/copywriting-2-m.svg", alt="為什麼一定要喝紅茶？")
+    .u-bg-light
+      .container.u-py-0
+        .copywriting__img.copywriting__img--right(style="background-image: url(https://images.unsplash.com/photo-1601230469955-ca57578ba056?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);")
+        .copywriting__text-container.copywriting__text-container--reverse
+          h2.copywriting__title-lg.copywriting__title-lg--top.u-d-none.u-md-d-block
+            img.copywriting__title-img(src="images/copywriting-2.svg", alt="為什麼一定要喝紅茶？")
+          p.copywriting__text.u-font-light.u-secondary 根據美國醫學研究指出：紅茶能使心臟病患者血管舒張度從 6% 提高到 10%，一般人則最多可提高到 13%。
+          p.copywriting__text.u-font-light.u-secondary 紅茶能去除肉類在口中的油質感與緩解吃甜食帶來的甜膩，且發酵過的紅茶相對的對腸胃也不那麼刺激，且多酚進到人體後，會氧化成為茶黃素、茶紅素，有幫助消化的功效與好處，進而促進食慾。
+  section.copywriting
+    .container
+      h2.copywriting__title-sm.u-md-d-none.u-py-3.u-text-center
+        img.copywriting__title-img.copywriting__title-img--lg(src="images/copywriting-3-m.svg", alt="想喝紅茶是不需要理由的")
+      h2.copywriting__title-lg.u-d-none.u-md-d-block.u-md-text-center.u-md-mb-8
+        img.copywriting__title-img.copywriting__title-img--lg(src="images/copywriting-3.svg", alt="想喝紅茶是不需要理由的")
+      ul.card-list.row
+        li.card-list__item.col-4.u-md-mb-0
+          .card-list__label.card-list__label--text 本日精選
+          button.card-list__label.card-list__label--btn
+            span.material-icons.u-primary favorite_border
+          .card-list__img(style="background-image: url(images/tea-1.png);")
+          .card-list__body
+            h3.card-list__title.u-primary 熱成紅茶
+            span.card-list__price.u-primary NT$ 60
+          button.card-list__btn.u-primary 加入購物車
+        li.card-list__item.col-4.u-md-mb-0
+          .card-list__label.card-list__label--text 本日精選
+          button.card-list__label.card-list__label--btn
+            span.material-icons.u-primary favorite_border
+          .card-list__img(style="background-image: url(images/tea-2.png);")
+          .card-list__body
+            h3.card-list__title.u-primary 鹿春紅茶
+            span.card-list__price.u-primary NT$ 60
+          button.card-list__btn.u-primary 加入購物車
+        li.card-list__item.col-4.u-md-mb-0
+          .card-list__label.card-list__label--text 本日精選
+          button.card-list__label.card-list__label--btn
+            span.material-icons.u-primary favorite_border
+          .card-list__img(style="background-image: url(images/tea-3.png);")
+          .card-list__body
+            h3.card-list__title.u-primary 太后紅茶
+            span.card-list__price.u-primary NT$ 60
+          button.card-list__btn.u-primary 加入購物車

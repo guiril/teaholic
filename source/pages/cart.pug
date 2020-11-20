@@ -1,0 +1,67 @@
+extends _layout
+
+block navbar
+  include partials/_navbar
+
+block content
+  .container.no-gutters.u-md-pt-3.u-md-pb-6.u-md-mx-auto
+    .row
+      .col-8.u-md-pr-2
+        h2.cart-title.u-font-md.u-font-bold.u-primary.u-bg-light.u-text-center 您的購物車
+        ul.cart-list.u-primary
+          li.cart-list__item
+            .cart-list__img(style="background-image: url(images/tea-1.png);")
+            .cart-list__body
+              .cart-list__content
+                h2.cart-list__title.u-font-sm.u-font-light 熱成紅茶
+                span.cart-list__text NT$ 60
+              .cart-list__action
+                button.cart-list__btn.u-border-light -
+                span.u-border-light 2
+                button.cart-list__btn.u-border-light +
+            .cart-list__footer
+              span.u-font-sm.u-font-bold  NT$ 120
+              button.cart-list__btn.u-d-none.u-md-d-block.u-secondary
+                span.material-icons delete_outline
+          li.cart-list__item
+            .cart-list__img(style="background-image: url(images/tea-2.png);")
+            .cart-list__body
+              .cart-list__content
+                h2.cart-list__title.u-font-sm.u-font-light 鹿春紅茶
+                span.cart-list__text NT$ 60
+              .cart-list__action
+                button.cart-list__btn.u-border-light -
+                span.u-border-light 2
+                button.cart-list__btn.u-border-light +
+            .cart-list__footer
+              span.u-font-sm.u-font-bold  NT$ 120
+              button.cart-list__btn.u-d-none.u-md-d-block.u-secondary
+                span.material-icons delete_outline
+          li.cart-list__item
+            .cart-list__img(style="background-image: url(images/tea-3.png);")
+            .cart-list__body
+              .cart-list__content
+                h2.cart-list__title.u-font-sm.u-font-light 太后紅茶
+                span.cart-list__text NT$ 60
+              .cart-list__action
+                button.cart-list__btn.u-border-light -
+                span.u-border-light 2
+                button.cart-list__btn.u-border-light +
+            .cart-list__footer
+              span.u-font-sm.u-font-bold  NT$ 120
+              button.cart-list__btn.u-d-none.u-md-d-block.u-secondary
+                span.material-icons delete_outline
+      .col-4
+        .cart-msg-box.u-px-3
+          h2.cart-title.cart-msg-title.u-font-md.u-font-bold.u-text-center 訂單摘要
+          ul.cart-msg-list
+            li.cart-msg-list__item.u-font-light
+              span 小計
+              span NT$ 360
+            li.cart-msg-list__item.u-font-light
+              span 運費
+              span NT$ 120
+            li.cart-msg-list__item.u-font-sm.u-font-bold
+              span 總計
+              span NT$ 480
+        a.u-d-block.btn.btn--lg.btn--warning(href="checkout-1.html") 結帳

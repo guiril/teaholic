@@ -1,0 +1,46 @@
+.footer {
+  padding: 38px 20px 30px 20px;
+}
+
+.footer-logo {
+  width: 171px;
+  margin-bottom: 40px;
+  @include md-media {
+    margin-bottom: 115px;
+  }
+}
+
+.contact-list {
+  margin-bottom: 37px;
+  &__text {
+    line-height: 24px;
+  }
+}
+
+.social-list {
+  display: flex;
+  margin-bottom: 23px;
+  @include md-media {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+  &__item {
+    margin-right: 8px;
+  }
+  &__link {
+    width: 32px;
+    display: block;
+  }
+}
+
+.footer-img {
+  display: none;
+  @include md-media {
+    width: 59px;
+    display: block;
+  }
+}
+
+.footer-text {
+  font-family: 'Times';
+}

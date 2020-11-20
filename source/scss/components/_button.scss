@@ -1,0 +1,25 @@
+.btn {
+  max-width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: $font-md;
+  font-weight: $font-bold;
+  text-align: center;
+  &--sm {
+    padding-right: 102px;
+    padding-left: 102px;
+  }
+  &--lg {
+    width: 100%;
+    @include md-media {
+      margin-left: auto;
+    }
+  }
+  &--warning {
+    color: $white;
+    background-color: $warning;
+    &:hover {
+      background-color: darken($warning, 5%);
+    }
+  }
+}

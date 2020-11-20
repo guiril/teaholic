@@ -1,0 +1,128 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &.opened {
+    .navbar-list {
+      max-height: 168px;
+    }
+  }
+}
+
+.navbar-toggler {
+  width: 18px;
+  height: 12px;
+  @include md-media {
+    display: none;
+  }
+  &__icon {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    background-color: $primary;
+    &:before, &:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute; 
+      display: block;
+      background-color: $primary;
+    }
+    &:before {
+      bottom: 5px;
+    }
+    &:after {
+      top: 5px;
+    }
+  }
+}
+
+.navbar-logo {
+  &__item {
+    width: 110px;
+    height: 25px;
+    display: block;
+    background: url(../images/logo-m.svg) no-repeat;
+    @include text-indent;
+    @include md-media {
+      width: 214px;
+      height: 40px;
+      background-image: url(../images/logo.svg);
+    }
+  }
+}
+
+.navbar-list {
+  max-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 86px;
+  right: 0;
+  left: 0;
+  z-index: 30;
+  background-color: $white;
+  overflow: hidden;
+  transition: max-height 1s;
+  @include md-media {
+    max-height: auto;
+    display: flex;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    flex-direction: row;
+    margin-left: auto;
+    overflow: initial;
+  }
+  &__item {
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    &:before, &:after {
+      content: '';
+      width: 0;
+      height: 2px;
+      display: block;
+      position: absolute;
+      right: 50%;
+      left: 50%;
+      background-color: $light;
+      opacity: 0;
+      transition: all .5s;
+    }
+    &:hover, &:active, &--active {
+      &:before, &:after {
+        width: 100%;
+        right: 0;
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    padding: 20px;
+    font-weight: 600;
+    color: $primary;
+    @include md-media {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.cart-link {
+  @include md-media {
+    margin-left: 20px;
+  }
+  &:hover {
+    color: $warning;
+  }
+}

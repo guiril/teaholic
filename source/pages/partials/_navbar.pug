@@ -1,0 +1,17 @@
+- var navbarList = [{ path: 'index.html', title: '首頁' }, { path: 'products.html', title: '茶品' }, { path: 'login.html', title: '登入' }]
+
+nav.navbar.container#navbar
+  button.navbar-toggler#navbarToggler
+    .navbar-toggler__icon
+  h1.navbar-logo
+    a.navbar-logo__item.u-d-block(href="index.html") Sweetaste
+  ul.navbar-list
+    each item in navbarList
+      if (item.path === path)
+        li.navbar-list__item.navbar-list__item--active
+          a.navbar-list__link(href=item.path) #{ item.title }
+      else
+        li.navbar-list__item
+          a.navbar-list__link(href=item.path) #{ item.title }
+  a.cart-link.u-primary(href="cart.html")
+    span.material-icons shopping_cart

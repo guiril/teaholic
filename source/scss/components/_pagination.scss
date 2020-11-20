@@ -1,0 +1,33 @@
+.pagination {
+  width: 300px;
+  margin: 0 auto;
+  @include md-media {
+    margin: 0 0 0 auto;
+  }
+}
+
+.page-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  &__item {
+    height: 60px;
+    flex: 1 0 0;
+    text-align: center;
+    border: 1px solid $light;
+  }
+  &__link {
+    height: 100%;
+    display: block;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 20px;
+    font-weight: 300;
+    color: $primary;
+    &:hover, &--active {
+      color: $light;
+      background-color: $primary;
+    }
+  }
+}

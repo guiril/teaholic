@@ -1,0 +1,37 @@
+extends _layout
+
+block navbar
+  - var path = 'login.html'
+  include partials/_navbar
+
+block content
+    .u-md-pt-3.u-md-pb-6
+      h2.form-title.u-light.u-bg-primary.u-md-d-none 會員登入
+      .container
+        .row.u-md-justify-center.no-gutters
+          .col-10
+            .row.u-md-row-reverse.u-md-justify-center.u-md-align-items-center
+              .col-6.u-bg-light
+                h2.u-pt-4.u-font-md.u-font-light.u-text-center.u-secondary —— 連結社群帳號 ——
+                ul.third-list
+                  li.third-list__item
+                    button.third-list__btn.u-bg-white
+                      img.third-list__img(src="images/login-f.svg", alt="")
+                  li.third-list__item
+                    button.third-list__btn.u-bg-white
+                      img.third-list__img(src="images/login-g.svg", alt="")
+                  li.third-list__item
+                    button.third-list__btn.u-bg-white
+                      img.third-list__img(src="images/login-y.svg", alt="")
+              .form.col-6.u-bg-primary
+                h2.form-title.u-light.u-bg-primary.u-d-none.u-md-d-block 會員登入
+                .form__row
+                  span.icon.material-icons.u-primary person
+                  input.form__input.u-primary.u-bg-light(type="text" placeholder="電子信箱/手機號碼")
+                .form__row
+                  span.icon.material-icons.u-primary vpn_key
+                  input.form__input.u-primary.u-bg-light(type="password" placeholder="請輸入使用者密碼")
+                .form__row
+                  input#rememberId(type="checkbox", name="")
+                  label.u-light(for="rememberId") 記住我
+                button.form__btn.u-white.u-bg-warning 登入帳號

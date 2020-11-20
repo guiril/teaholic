@@ -1,0 +1,33 @@
+$primary: #333333;
+$secondary: #161415;
+$warning: #E5781F; 
+$light: #EFEFEF;
+$white: #FFFFFF;
+
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'warning': $warning,
+  'light': $light,
+  'white': $white
+);
+
+$font-lg: 36px;
+$font-md: 24px;
+$font-sm: 20px;
+$font-xs: 16px;
+
+$font-size: (
+  'lg': $font-lg,
+  'md': $font-md,
+  'sm': $font-sm,
+  'xs': $font-xs
+);
+
+$font-bold: 600;
+$font-light: 300;
+
+$font-weight: (
+  'bold': $font-bold,
+  'light': $font-light
+);

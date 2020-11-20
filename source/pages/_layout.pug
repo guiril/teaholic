@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include partials/_head
+  body
+    .wrap
+      block navbar
+      block content
+      section.u-py-3.u-bg-primary.u-text-center
+        .container.u-md-d-flex.u-md-justify-between.u-md-align-items-center
+          h3.subscription-title.u-d-flex.u-justify-center.u-align-center
+            img.subscription-title__logo(src="images/logo-s.svg", alt="Logo Icon")
+            p.u-font-md.u-light 訂閱你我的甜蜜郵件
+          .subscription-mailbox
+            span.material-icons.u-warning.subscription-mailbox__icon email
+            input.subscription-mailbox__input.u-primary(type="mail")
+            button.subscription-mailbox__btn.u-bg-warning
+              .material-icons.subscription-mailbox__btn-icon.u-white arrow_forward
+      include partials/_footer
+    include partials/_scripts

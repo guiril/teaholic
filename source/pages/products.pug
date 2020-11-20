@@ -1,0 +1,88 @@
+extends _layout
+
+block navbar
+  - var path = 'products.html'
+  include partials/_navbar
+
+block content
+  .container.u-py-0.u-md-px-1
+    .banner.u-md-mb-6(style="background-image: url(https://images.unsplash.com/photo-1491720731493-223f97d92c21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1530&q=80);")
+      img.banner__img(src="images/copywriting-3.svg", alt="")
+  main.container
+    .row
+      dl.list-group.col-4
+        dt.list-group__title.u-bg-primary
+          h2.u-light 茶品類別
+        each item in ['所有茶品（15）', '本日精選（10）', '人氣推薦（8）', '新品上市（8）']
+          dd.list-group__item
+            a.list-group__link.u-primary.u-d-block(href="javascript:void(0)") #{item}
+      .col-8
+        ul.card-list.row
+          li.card-list__item.col-6
+            .card-list__label.card-list__label--text 本日精選
+            button.card-list__label.card-list__label--btn
+              span.material-icons.u-primary favorite_border
+            .card-list__img(style="background-image: url(images/tea-1.png);")
+            .card-list__body
+              h3.card-list__title.u-primary 熱成紅茶
+              span.card-list__price.u-primary NT$ 60
+            button.card-list__btn.u-primary 加入購物車
+          li.card-list__item.col-6
+            .card-list__label.card-list__label--text 本日精選
+            button.card-list__label.card-list__label--btn
+              span.material-icons.u-primary favorite_border
+            .card-list__img(style="background-image: url(images/tea-2.png);")
+            .card-list__body
+              h3.card-list__title.u-primary 鹿春紅茶
+              span.card-list__price.u-primary NT$ 60
+            button.card-list__btn.u-primary 加入購物車
+          li.card-list__item.col-6
+            .card-list__label.card-list__label--text 本日精選
+            button.card-list__label.card-list__label--btn
+              span.material-icons.u-primary favorite_border
+            .card-list__img(style="background-image: url(images/tea-3.png);")
+            .card-list__body
+              h3.card-list__title.u-primary 太后紅茶
+              span.card-list__price.u-primary NT$ 60
+            button.card-list__btn.u-primary 加入購物車
+          li.card-list__item.col-6
+            .card-list__label.card-list__label--text 本日精選
+            button.card-list__label.card-list__label--btn
+              span.material-icons.u-primary favorite_border
+            .card-list__img(style="background-image: url(images/tea-4.png);")
+            .card-list__body
+              h3.card-list__title.u-primary 熱成冷露
+              span.card-list__price.u-primary NT$ 60
+            button.card-list__btn.u-primary 加入購物車
+          li.card-list__item.col-6
+            .card-list__label.card-list__label--text 本日精選
+            button.card-list__label.card-list__label--btn
+              span.material-icons.u-primary favorite_border
+            .card-list__img(style="background-image: url(images/tea-5.png);")
+            .card-list__body
+              h3.card-list__title.u-primary 雪化冷露
+              span.card-list__price.u-primary NT$ 60
+            button.card-list__btn.u-primary 加入購物車
+          li.card-list__item.col-6
+            .card-list__label.card-list__label--text 本日精選
+            button.card-list__label.card-list__label--btn
+              span.material-icons.u-primary favorite_border
+            .card-list__img(style="background-image: url(images/tea-6.png);")
+            .card-list__body
+              h3.card-list__title.u-primary 春呀冷露
+              span.card-list__price.u-primary NT$ 60
+            button.card-list__btn.u-primary 加入購物車
+        nav.pagination
+          ul.page-list
+            li.page-list__item
+              a.page-list__link(href="javascript:void(0)")
+                span.material-icons.page-list__icon arrow_left
+            li.page-list__item
+              a.page-list__link.page-list__link--active(href="javascript:void(0)") 1
+            li.page-list__item
+              a.page-list__link(href="javascript:void(0)") 2
+            li.page-list__item
+              a.page-list__link(href="javascript:void(0)") 3
+            li.page-list__item
+              a.page-list__link(href="javascript:void(0)")
+                span.material-icons.page-list__icon arrow_right

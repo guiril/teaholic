@@ -1,0 +1,18 @@
+extends _layout
+
+block navbar
+  include partials/_navbar
+
+block content
+  .u-md-pb-6
+    main.container.checkout-container.u-d-flex.u-flex-direction-column.u-justify-center.u-align-center
+      ul.checkout-step.checkout-step--dark.u-d-flex.u-justify-between.u-align-center
+        li.checkout-step__item
+          span.material-icons check_circle
+        li.checkout-step__item
+          span.material-icons check_circle
+        li.checkout-step__item
+          span.material-icons check_circle
+      img.checkout-success(src="images/done.svg", alt="付款成功")
+      a.u-d-none.u-md-d-inline-block.btn.btn--sm.btn--warning(href="products.html") 繼續逛逛
+    a.u-d-block.u-md-d-none.btn.btn--lg.btn--warning(href="products.html") 繼續逛逛

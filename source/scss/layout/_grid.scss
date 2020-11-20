@@ -1,0 +1,49 @@
+$gutter-width: 30px;
+$grid-num: 12;
+
+.container {
+  position: relative;
+  max-width: 960px;
+  padding-left: $gutter-width / 3;
+  padding-right: $gutter-width / 3;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -($gutter-width / 3);
+  margin-left: -($gutter-width / 3);
+}
+
+%col {
+  max-width: 100%;
+  position: relative;
+  padding-right: $gutter-width / 3;
+  padding-left: $gutter-width / 3;
+  flex: 0 0 100%;
+}
+
+@for $i from 1 through $grid-num {
+  .col-#{$i} {
+    @extend %col;
+  }
+}
+
+@media(min-width: 767px) {
+  @for $i from 1 through $grid-num {
+    .col-#{$i} {
+      max-width: ($i / $grid-num) * 100%;
+      flex: 0 0 (($i / $grid-num) * 100%);
+    }
+  }
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
