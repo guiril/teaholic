@@ -4,8 +4,6 @@
 
 ## Demo
 
-網址：[https://ouiis.github.io/teaholic/](https://ouiis.github.io/teaholic/ "Tea'aholic")
-
 ### 電腦版
 ![](https://i.imgur.com/XdtVkv2.jpg)
 
